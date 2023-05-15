@@ -1,0 +1,259 @@
+/* All elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+/* Navbar section */
+.navBar{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+a.nav-link{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.landingNavBar{
+  height: 12vh;
+  background-color: white;
+  height: 15vh;
+}
+
+#logo{
+  width: 11vh;
+  max-height: 100%;
+}
+
+div.container-fluid{
+  width: 50%;
+}
+
+
+/* Introduction section */
+.intro {
+  height: 101vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+}
+
+.intro h2 {
+  position: absolute;
+  top: 80%;
+  left: 65.2%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+}
+
+.intro h2 a{
+  text-decoration: none;
+  color: rgb(104, 68, 1);
+} 
+
+/* Products category section */
+#productsExplorer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  background: linear-gradient(to bottom, rgb(165, 147, 112), transparent);
+}
+
+#productsExplorer h1{
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 5rem;
+  color: white;
+  font-size: 2rem;
+  background-image: linear-gradient(to top, rgb(239, 229, 210), white);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#productsExplorer p{
+  margin-top: 3rem;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#whatWeOfferTitle{
+  font-size: 9rem !important;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  position: relative;
+  width: 33.33333%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.category h2{
+  position: relative;
+  z-index: 1;
+  font-size: 10rem;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 75, 27, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.category-overlay:hover {
+  opacity: 1;
+}
+
+.category-overlay h3, .category-overlay p {
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.5s ease;
+}
+
+.container:hover .text-wrapper {
+  top: 50%;
+}
+
+.text {
+  transition: transform 0.5s ease;
+}
+
+.container:hover .text {
+  transform: translateY(-50%);
+}
+
+
+/* Footer */
+footer{
+  height: 100%;
+  width: 100%;
+  margin-top: 60vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  height: 100%;
+}
+
+.brand-logo-light{
+  height: 100%;
+}
+
+.context-dark, .bg-gray-dark, .bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+  color: #ffffff;
+}
+
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .22s ease;
+}
