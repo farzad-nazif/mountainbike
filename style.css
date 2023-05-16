@@ -9,6 +9,31 @@ body {
   font-family: sans-serif;
 }
 
+/* About us section for about us page */
+main{
+  height: 100%;
+    background: linear-gradient(to top, rgb(165, 147, 112), transparent);
+  display: flex;
+  justify-content: center;
+  padding: 20vh;
+  gap: 10%;
+}
+
+main h3{
+  width: 50%;
+  font-family: monospace;
+  text-align: center;
+}
+
+.weAreHere{
+  text-align: center;
+  font-size: 9rem;
+  margin-top: 5%;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 /* Navbar section */
 .navBar{
@@ -196,6 +221,11 @@ footer{
   flex-direction: column;
   align-items: center;
 }
+
+#aboutUsFooter{
+  margin-top: 0;
+}
+
 
 .container{
   height: 100%;
