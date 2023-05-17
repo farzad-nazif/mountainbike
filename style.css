@@ -33,6 +33,90 @@ main h3{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* Main section of contact us page  */
+.contactUs{
+background-image: none;
+background-color: rgb(227, 226, 226);
+}
+
+.contactData{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(100, 75, 27, 0.6);
+  display: flex;
+  flex-direction: row;
+}
+
+.contactForm{
+  width: 50%;
+  background-color: white;
+  padding: 5%;
+}
+
+.contactForm h1{
+  font-size: 2.75rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contactDetails{
+  padding: 9.9%;
+  margin-top: 5.6%;
+  margin-bottom: 5.6%;
+}
+
+.contactDetails h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: beige;
+}
+
+.contactDetails h4{
+  color: white;
+}
+
+.submitBtn{
+  margin-top: 5%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-style: none;
+  background-color: rgba(100, 75, 27, 0.6);
+  color: #ffffff;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+
+.u-input {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  background-image: none;
+  background-color: #e5e5e5 !important;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 3px;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  background-color: transparent;
+  color: inherit;
+  margin-top: 2%;
+}
+
+.u-input-rectangle {
+  border-radius: 0;
+}
+
+
+.contactForm div{
+  width: 20%;
+  height: 0.5rem;
+  position: relative;
+  background-color: #4d6de6;
+}
+
+.companyMap iframe{
+  height: 38%;
+  max-width: 100%;
+  max-height: 38%;
+}
+
 
 
 /* Navbar section */
@@ -229,6 +313,7 @@ footer{
 
 .container{
   height: 100%;
+  padding-top: 2%;
 }
 
 .brand-logo-light{
