@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --background-color: #2A2E37;
+  --search-bg-color: #242628;
+  --icon-color: #00FEDE;
+  --transition: all .5s ease;
 }
 
 body {
@@ -117,6 +121,82 @@ background-color: rgb(227, 226, 226);
   max-height: 38%;
 }
 
+/* Articles section  */
+.articles{
+  background-image: none;
+  background-color: rgb(227, 226, 226) !important;
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.articleContent{
+  width: 50%;
+}
+
+.articleContent p{
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+
+.articles img{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#progress-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  background: linear-gradient(to right,#ff5f6d,#ffc371);
+  width: 0%;
+  z-index: 100;
+}
+
+/* Products Menu */
+.productsMenu{
+  background-image: none;
+  background-color: rgb(227, 226, 226) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsMenu h1{
+  align-self: center;
+  justify-self: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 7rem;
+}
+
+.productsList{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2.5rem;
+}
+
+.productSearchBar{
+  width: 93.3%;
+  height: 10vh;
+  background-color: #ffc371;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+}
+
+
 
 
 /* Navbar section */
@@ -178,15 +258,49 @@ div.container-fluid{
 
 .intro h2 a{
   text-decoration: none;
-  color: rgb(104, 68, 1);
+  color: white;
 } 
 
+#clickForDetails{
+  z-index: 100;
+}
+
+
+#clickForDetails:hover{
+  cursor: pointer;
+}
+
 /* Products category section */
+
+.caarousel{
+  width: 50%;
+}
+
+.d-block{
+  background-color: rgba(118, 97, 56, 0.6);
+  width: 50%;
+}
+
+.carouselLabels{
+  font-size: 7rem;
+}
+
+.carouselContainer{
+  width: 50%;
+  height: 50%;
+  max-height: 60vh;
+  margin-bottom: 30vh;
+  justify-self: center;
+  align-self: center;
+}
+
+
 #productsExplorer {
-  height: 100vh;
+  height: 40%;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 6rem;
+  padding: 4rem;
   background: linear-gradient(to bottom, rgb(165, 147, 112), transparent);
 }
 
@@ -207,6 +321,7 @@ div.container-fluid{
   font-family: monospace;
   font-size: 1.2rem;
   text-align: center;
+  padding: 4% 20%;
 }
 
 #whatWeOfferTitle{
@@ -299,7 +414,7 @@ div.container-fluid{
 footer{
   height: 100%;
   width: 100%;
-  margin-top: 60vh;
+  margin-top: 110vh;
   background-color: grey;
   display: flex;
   flex-direction: column;

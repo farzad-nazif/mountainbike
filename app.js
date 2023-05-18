@@ -1,7 +1,12 @@
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const featureProduct = intro.querySelector("h1");
-const detailBtnProduct = intro.querySelector("h2");
+const progressBar = document.querySelector('#progress-bar');
+const articleContent = document.querySelector('.articleContent')
+
+
+
+
 //END SECTION
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
@@ -20,7 +25,6 @@ let scene = new ScrollMagic.Scene({
 
 //Text Animation
 const textAnim = TweenMax.fromTo(featureProduct, 3, { opacity: 1 }, { opacity: 0 });
-const detailBtnAnim = TweenMax.fromTo(detailBtnProduct, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
   duration: 2000,
@@ -29,15 +33,6 @@ let scene2 = new ScrollMagic.Scene({
 })
   .setTween(textAnim)
   .addTo(controller);
-
-let scene3 = new ScrollMagic.Scene({
-  duration: 2000,
-  triggerElement: intro,
-  triggerHook: 0
-})
-  .setTween(detailBtnAnim)
-  .addTo(controller);
-
 
 
 //Video Animation
