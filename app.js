@@ -1,10 +1,9 @@
+//Finding and saving html tags in JS
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const featureProduct = intro.querySelector("h1");
 const progressBar = document.querySelector('#progress-bar');
 const articleContent = document.querySelector('.articleContent')
-
-
 
 
 //END SECTION
@@ -34,7 +33,6 @@ let scene2 = new ScrollMagic.Scene({
   .setTween(textAnim)
   .addTo(controller);
 
-
 //Video Animation
 let accelamount = 0.1;
 let scrollpos = 0;
@@ -44,6 +42,7 @@ scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
 });
 
+// It changes the time of the video using interval
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
 
